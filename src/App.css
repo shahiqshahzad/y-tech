@@ -1,0 +1,148 @@
+.background-campaigns {
+  background-color: #f6fcff;
+}
+.circle-campaigns {
+  background-color: #2a83ec;
+  height: 6vh;
+  width: 6vh;
+  border-radius: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-rectangle {
+  background-color: #cce1fa;
+  height: 22px;
+  width: 22px;
+  border-radius: 3px;
+  display: flex;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar-text-responsive {
+  font-size: 2vh;
+}
+.white {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.line-d {
+  border-bottom: 3px;
+  background-color: black;
+  width: 100%;
+  height: 1px;
+}
+.border-button {
+  border: 1px solid #2a83ec;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-button:hover {
+  border: 1px solid #2a83ec;
+  color: #2a83ec;
+  font-weight: bold;
+}
+.circle-uni {
+  background-color: #2a83ec;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addstep-color {
+  background-color: #eff5fe;
+}
+.background-color-white {
+  background-color: white;
+  border-radius: 5px;
+}
+.border-text-custom {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 1px 2px 1px 2px;
+  cursor: pointer;
+}
+
+.link-color {
+  color: #2a83ec;
+}
+.pointer {
+  cursor: pointer;
+}
+.boxer {
+  background-color: #bdbaba;
+  text-align: center;
+  height: 25px;
+  width: 25px;
+  padding: 1px 2px 1px 2px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.border-blue {
+  border: 1px solid #2a83ec;
+  align-items: center;
+  display: flex;
+  border-radius: 6px;
+  justify-content: center;
+  height: 158px;
+}
+.dropdown img {
+  width: 50px;
+}
+.account-color {
+  color: #000;
+  font-weight: 500;
+}
+
+hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(42, 131, 236, 0.24);
+}
+.border-lock {
+  border: 1px solid #434343;
+  border-radius: 3px;
+  padding: 1px;
+  cursor: pointer;
+}
+.color-black {
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+}
+.border-edit {
+  border: 1px solid #9a48f7;
+  border-radius: 3px;
+  padding: 1px;
+  cursor: pointer;
+}
+.color-purple {
+  color: #9a48f7;
+  font-size: 15px;
+  cursor: pointer;
+}
+.border-trash {
+  border: 1px solid #ff5c00;
+  border-radius: 3px;
+  padding: 1px;
+  cursor: pointer;
+}
+.color-trash {
+  color: #ff5c00;
+  font-size: 15px;
+  cursor: pointer;
+}
+.premium-text {
+  color: #727272;
+  font-size: 14px;
+}
