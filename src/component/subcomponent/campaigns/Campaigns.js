@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Tick from "../../assets/campaigns/tick.svg";
 import EditIcon from "../../assets/campaigns/edit.svg";
 import ArrowupIcon from "../../assets/campaigns/arrowup.svg";
 import barIcon from "../../assets/campaigns/bar.svg";
 import { Collapse, ProgressBar } from "react-bootstrap";
 const Campaigns = () => {
   const [open, setOpen] = useState(false);
+  const [open1, setOpen1] = useState(false);
   return (
     <div className="contents expanded background-campaigns ">
       <div className="container-fluid  mt-3">
@@ -22,9 +22,9 @@ const Campaigns = () => {
         </div>
 
         {/* /////////////////////////////////////////////// */}
-        <div className="row white mt-2">
+        <div className="row white mt-2 justify-content-between">
           <div className="col-6 col-sm-3">
-            <div className="d-flex  align-items-center ">
+            <div className="d-flex  align-items-center  ">
               <div>
                 <div className="d-flex align-items-center">
                   <div class="custom-control custom-switch switch-primary switch-md ">
@@ -52,42 +52,7 @@ const Campaigns = () => {
               </div>
             </div>
           </div>
-          <div className="col-0 col-sm-7 d-none d-sm-flex justify-content-between align-items-center ">
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>New</div>
-            </div>
-
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>Contacted</div>
-            </div>
-
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>Connected</div>
-            </div>
-
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>Replied</div>
-            </div>
-
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>Lead</div>
-            </div>
-
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>Customer</div>
-            </div>
-
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>Not Connected</div>
-            </div>
-          </div>
+       
           <div className="col-6 col-sm-2  align-self-center">
             <div className="d-flex justify-content-around align-item-center">
               <div
@@ -202,7 +167,7 @@ const Campaigns = () => {
         </div>
 
         {/* /////////////////////////////////////////////// */}
-        <div className="row white mt-2">
+        <div className="row white mt-2 justify-content-between">
           <div className="col-6 col-sm-3">
             <div className="d-flex  align-items-center ">
               <div>
@@ -232,47 +197,12 @@ const Campaigns = () => {
               </div>
             </div>
           </div>
-          <div className="col-0 col-sm-7 d-none d-sm-flex justify-content-between align-items-center ">
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>New</div>
-            </div>
-
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>Contacted</div>
-            </div>
-
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>Connected</div>
-            </div>
-
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>Replied</div>
-            </div>
-
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>Lead</div>
-            </div>
-
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>Customer</div>
-            </div>
-
-            <div className="text-responsive">
-              <div className="text-center "> 0</div>
-              <div>Not Connected</div>
-            </div>
-          </div>
+      
           <div className="col-6 col-sm-2  align-self-center">
             <div className="d-flex justify-content-around align-item-center">
               <div
                 className="right-rectangle p-3"
-                onClick={() => setOpen(!open)}
+                onClick={() => setOpen1(!open1)}
                 aria-controls="example-collapse-text"
                 aria-expanded={open}
               >
@@ -288,7 +218,7 @@ const Campaigns = () => {
 
             {/* ======= */}
           </div>
-          <Collapse in={open}>
+          <Collapse in={open1}>
             <div className="col-12 pt-3" id="example-collapse-text">
               <div className="row">
                 <div className="col-4 col-sm-2">

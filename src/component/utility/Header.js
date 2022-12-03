@@ -1,11 +1,13 @@
 import React from "react";
 import imageBarIcon from "../../component/assets/img/svg/bars.svg";
-import darkLogo from "../../component/assets/img/logo_dark.png";
 import headerProfile from "../../component/assets/header/author-nav.jpg";
+import FeatherIcon from 'feather-icons-react'
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <header className="header-top ">
+  
+    <header className="header-top ">
         <nav className="navbar navbar-light">
           <div className="navbar-left">
             <a href="#" className="sidebar-toggle">
@@ -14,16 +16,53 @@ const Header = () => {
             <a className="navbar-brand" href="##">
               <h3>Y-tech</h3>
             </a>
-            <form action="/" className="search-form">
-              <span data-feather="search"></span>
-              <input
-                className="form-control mr-sm-2 box-shadow-none"
-                type="text"
-                placeholder="Search..."
-              />
-            </form>
+            
           </div>
           {/* <!-- ends: navbar-left --> */}
+          <div class="top-menu">
+            <div class="strikingDash-top-menu position-relative">
+            <ul>
+                 <li>
+              <Link to="/" class=" active">
+                <FeatherIcon icon="home" class="nav-icon" />
+
+                <span class="menu-text">Dashboard</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/campaigns" class="">
+                <FeatherIcon icon="clipboard" class="nav-icon" />
+                <span class="menu-text">Campaigns</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/email" class="">
+                <FeatherIcon icon="inbox" class="nav-icon" />
+                <span class="menu-text">Inbox</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/email" >
+                <FeatherIcon icon="mail" class="nav-icon" />
+                <span class="menu-text">Email</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/addCampaigns" >
+                <FeatherIcon icon="aperture" class="nav-icon" />
+                <span class="menu-text">LinkedIn Acoounts</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/account">
+                <FeatherIcon icon="settings" class="nav-icon" />
+                <span class="menu-text">Setting</span>
+              </Link>
+            </li>
+              </ul>
+            </div>
+          </div>
+             
 
           <div className="navbar-right">
             <ul className="navbar-right__menu">
@@ -71,7 +110,7 @@ const Header = () => {
                     <ul>
                       <li className="author-online has-new-message">
                         <div className="user-avater">
-                          <img src="img/team-1.png" alt="" />
+                          <img src="img/team-1.png" alt="" />/
                         </div>
                         <div className="user-message">
                           <p>
@@ -99,7 +138,7 @@ const Header = () => {
                       </li>
                       <li className="author-offline has-new-message">
                         <div className="user-avater">
-                          <img src="img/team-1.png" alt="" />
+                          <img src="img/team-1.png" alt="" />/
                         </div>
                         <div className="user-message">
                           <p>
@@ -127,7 +166,7 @@ const Header = () => {
                       </li>
                       <li className="author-online has-new-message">
                         <div className="user-avater">
-                          <img src="img/team-1.png" alt="" />
+                          <img src="img/team-1.png" alt="" />/
                         </div>
                         <div className="user-message">
                           <p>
@@ -155,7 +194,7 @@ const Header = () => {
                       </li>
                       <li className="author-offline">
                         <div className="user-avater">
-                          <img src="img/team-1.png" alt="" />
+                          <img src="img/team-1.png" alt="" />/
                         </div>
                         <div className="user-message">
                           <p>
@@ -180,7 +219,7 @@ const Header = () => {
                       </li>
                       <li className="author-offline">
                         <div className="user-avater">
-                          <img src="img/team-1.png" alt="" />
+                          <img src="img/team-1.png" alt="" />/
                         </div>
                         <div className="user-message">
                           <p>
@@ -357,7 +396,7 @@ const Header = () => {
                     <ul className="list-settings">
                       <li className="d-flex">
                         <div className="mr-3">
-                          <img src="img/mail.png" alt="" />
+                          <img src="img/mail.png" alt="" />/
                         </div>
                         <div className="flex-grow-1">
                           <h6>
@@ -370,7 +409,7 @@ const Header = () => {
                       </li>
                       <li className="d-flex">
                         <div className="mr-3">
-                          <img src="img/color-palette.png" alt="" />
+                          <img src="img/color-palette.png" alt="" />/
                         </div>
                         <div className="flex-grow-1">
                           <h6>
@@ -383,7 +422,7 @@ const Header = () => {
                       </li>
                       <li className="d-flex">
                         <div className="mr-3">
-                          <img src="img/home.png" alt="" />
+                          <img src="img/home.png" alt="" />/
                         </div>
                         <div className="flex-grow-1">
                           <h6>
@@ -396,7 +435,7 @@ const Header = () => {
                       </li>
                       <li className="d-flex">
                         <div className="mr-3">
-                          <img src="img/video-camera.png" alt="" />
+                          <img src="img/video-camera.png" alt="" />/
                         </div>
                         <div className="flex-grow-1">
                           <h6>
@@ -409,7 +448,7 @@ const Header = () => {
                       </li>
                       <li className="d-flex">
                         <div className="mr-3">
-                          <img src="img/document.png" alt="" />
+                          <img src="img/document.png" alt="" />/
                         </div>
                         <div className="flex-grow-1">
                           <h6>
@@ -422,7 +461,7 @@ const Header = () => {
                       </li>
                       <li className="d-flex">
                         <div className="mr-3">
-                          <img src="img/microphone.png" alt="" />
+                          <img src="img/microphone.png" alt="" />/
                         </div>
                         <div className="flex-grow-1">
                           <h6>
@@ -490,20 +529,20 @@ const Header = () => {
               {/* <li className="nav-flag-select">
                 <div className="dropdown-custom">
                   <a href="#javascript:;" className="nav-item-toggle">
-                    <img src="img/flag.png" alt="" className="rounded-circle" />
+                    <img src="img/flag.png" alt="" cl/assName="rounded-circle" />
                   </a>
                   <div className="dropdown-wrapper dropdown-wrapper--small">
                     <a href="#">
-                      <img src="img/eng.png" alt="" /> English
+                      <img src="img/eng.png" alt="" />/ English
                     </a>
                     <a href="#">
-                      <img src="img/ger.png" alt="" /> German
+                      <img src="img/ger.png" alt="" />/ German
                     </a>
                     <a href="#">
-                      <img src="img/spa.png" alt="" /> Spanish
+                      <img src="img/spa.png" alt="" />/ Spanish
                     </a>
                     <a href="#">
-                      <img src="img/tur.png" alt="" /> Turkish
+                      <img src="img/tur.png" alt="" />/ Turkish
                     </a>
                   </div>
                 </div>
@@ -515,7 +554,7 @@ const Header = () => {
                     <img
                       src={headerProfile}
                       alt=""
-                      className="rounded-circle"
+                  className="rounded-circle"
                     />
                   </a>
                   <div className="dropdown-wrapper">
@@ -524,8 +563,7 @@ const Header = () => {
                         <img
                           src={headerProfile}
                           alt=""
-                          className="rounded-circle"
-                        />
+                        className="rounded-circle"/>
                       </div>
                       <div>
                         <h6>Abdullah Bin Talha</h6>
@@ -663,7 +701,7 @@ const Header = () => {
               {/* <!-- ends: .nav-author --> */}
             </ul>
             {/* <!-- ends: .navbar-right__menu --> */}
-            <div className="navbar-right__mobileAction d-md-none">
+            <div className="navbar-right__mobileAction d-none">
               <a href="##" className="btn-search">
                 <span data-feather="search"></span>
                 <span data-feather="x"></span>

@@ -23,27 +23,29 @@ function App() {
           <Route path="/login" element={<Public />}>
             <Route path="" element={<Login />} />
           </Route>
+          
           <Route path="/signup" element={<Signup />}></Route>
-          <Route path="/" element={<Private />}>
+
+          <Route path="/home" element={<Private />}>
             <Route path="" element={<Home />}></Route>
           </Route>
-          <Route path="User" element={<Private />}>
+          <Route path="/" element={<Private />}>
             <Route path="" element={<Card />}></Route>
           </Route>
 
-          <Route path="campaigns" element={<Private />}>
+          <Route path="/campaigns" element={<Private />}>
             <Route path="" element={<Campaigns />}></Route>
           </Route>
 
-          <Route path="addCampaigns" element={<Private />}>
+          <Route path="/addCampaigns" element={<Private />}>
             <Route path="" element={<AddNewCaigns />}></Route>
           </Route>
 
-          <Route path="account" element={<Private />}>
+          <Route path="/account" element={<Private />}>
             <Route path="" element={<Account />}></Route>
           </Route>
 
-          <Route path="email" element={<Private />}>
+          <Route path="/email" element={<Private />}>
             <Route path="" element={<Email />}></Route>
           </Route>
         </Routes>

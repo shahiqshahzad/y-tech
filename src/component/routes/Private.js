@@ -11,7 +11,7 @@ const Private = () => {
     <>
       <Header />
       <main>
-        <Sidebar />
+        {/* <Sidebar /> */}
         <div>
           <Outlet />
         </div>
